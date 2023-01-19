@@ -13,7 +13,7 @@ export class DataBindingComponent implements OnInit {
   public imgSrc: string = "https://conteudo.imguol.com.br/c/entretenimento/09/2021/11/22/valorant-chamber-1637604989645_v2_900x506.jpg"
   public imgTitle: string = "chamber"
   public alt: string = "chamber"
-  public position: { x: number, y: number} = {x: 0, y: 0}
+  public position: { x: number, y: number} = {x: 0, y: 0};
   
   
   public alertaInfo(mensagem: MouseEvent) {
@@ -23,7 +23,7 @@ export class DataBindingComponent implements OnInit {
   public mouseMoveTeste(valor: MouseEvent){
     this.position.x = valor.offsetX
     this.position.y  = valor.offsetY
-  }
+  };
 
 
   constructor (){}
@@ -32,4 +32,4 @@ export class DataBindingComponent implements OnInit {
     console.log("Funcionou!")
   }
 
-}
+};
